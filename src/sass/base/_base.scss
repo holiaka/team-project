@@ -1,0 +1,12 @@
+/* Standard features */
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: var(--typical-text-color);
+    line-height: calc(16.41  / 14);    
+    }
+    
+    // Switching on when open feedback/windows form
+    .no-scroll {
+        overflow: hidden;
+    }

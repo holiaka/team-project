@@ -1,0 +1,10 @@
+/* Features and calculation of "flex-containers" contents */
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--card-gap);
+}
+
+.card-item {
+    flex-basis: calc((100% - (var(--card-numbers) - 1) * var(--card-gap)) / var(--card-numbers));
+}

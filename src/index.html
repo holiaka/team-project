@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>FoodSta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <!--Add partials like so for every page -->   
+   
+    <!-- Header elements -->
+    <include src="./partials/header.html"></include>
+    <main>
+      <!-- Hero elements -->
+      <include src="./partials/hero.html"></include>
+      <!-- Offerigs elements -->
+      <include src="./partials/offerings.html"></include>
+      <!-- Favorites elements -->
+      <include src="./partials/favorites.html"></include>
+      <!-- Customers Say elements -->
+      <include src="./partials/customers-say.html"></include> 
+      <!-- Subscribe elements -->
+      <include src="./partials/subscribe.html"></include>
+    </main>
+    <!-- Footer elements -->
+    <include src="./partials/footer.html"></include>
   </body>
 </html>
