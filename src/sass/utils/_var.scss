@@ -1,0 +1,27 @@
+/* Variable */
+:root {
+    /* Text colors */
+    --typical-text-color: #2C2C2C;
+    --full-black-color: #000000; // for bottoms    
+    --grey-text-color: #505050;
+   
+
+    /* Universal colors */
+    --dark-green: #7EB101;
+    --hover-green: #BBF330;
+    --noclean-white: #FEFEFE;
+    --orange-def: #FFE550;
+
+    /* Angle radius */
+    --small-radius: 30px;
+    --full-round: 50%;
+
+    /* Card gap`s distance */
+    --card-gap: 32px;
+
+    /* Number of cards in a row */
+    --card-numbers: 1;
+
+    /* Transition for :hover & :focus */
+    --animation-time: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

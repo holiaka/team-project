@@ -1,1 +1,20 @@
-@import './common';
+// Utils
+@import './utils/normalize';
+@import './utils/mixin';
+@import './utils/placeholders';
+@import './utils/var';
+
+// Base
+@import './base/common';
+
+// Components
+
+
+// Layout
+@import './layout/header';
+@import './layout/hero';
+@import './layout/offerings';
+@import './layout/favorites';
+@import './layout/customers-say';
+@import './layout/subscribe';
+@import './layout/footer';
