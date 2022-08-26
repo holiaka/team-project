@@ -1,4 +1,22 @@
 .footer {
-    width: 1200px;
-    background-image: url("/assets/footer.bgimg.fruit.png");
+  @media screen and (min-width: 480px) {
+    background-image: url('/assets/footer.bgimg.fruit.mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('/assets/footer.bgimg.fruit.tablet.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('/assets/footer.bgimg.fruit.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }
