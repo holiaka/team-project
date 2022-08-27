@@ -1,8 +1,4 @@
 .favorites {
-  text-align: center;
-  @extend %section-padding;
-  @extend %section-title;
-  @extend %container;
   @include mq(tab) {
     --card-numbers: 3;
   }
@@ -12,28 +8,38 @@
     }
   }
   &__list {
+    @include mq(only_mob) {
+      align-items: center;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
     @extend %reset-list;
-    display: flex;
-    flex-wrap: wrap;
   }
   &__link {
-    @extend %reset-link;
     display: flex;
     overflow: hidden;
-    width: 100%;
-    height: 100%;
-    padding: 29px;
-    border-radius: 50%;
-    border: 11px solid var(--orange-def);
+    @include mq(tab) {
+      padding: 24px;
+    }
+    padding: 18px;
+
+    @extend %reset-link;
   }
   &__pic {
-    display: flex;
-    border-radius: 50%;
     overflow: hidden;
   }
+  &__img {
+    max-width: 100%;
+  }
   &__item {
-    display: flex;
     border-radius: 50%;
+    border: 11px solid var(--orange-def);
+    max-width: 280px;
+    // max-height: 280px;
+    @include mq(tab) {
+      max-width: 338px;
+      // max-height: 338x;
+    }
     // display: flex;
     // align-items: center;
     // justify-content: center;
@@ -42,4 +48,7 @@
   &__link:focus {
     border-color: var(--hover-green);
   }
+  @extend %section-padding;
+  @extend %section-title;
+  @extend %container;
 }
