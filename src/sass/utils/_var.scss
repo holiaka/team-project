@@ -1,41 +1,45 @@
 /* Variable */
 :root {
-    /* Text colors */
-    --typical-text-color: #2C2C2C;
-    --full-black-color: #000000; // for buttons    
-    --grey-text-color: #505050;
-   
+  /* Text colors */
+  --typical-text-color: #2c2c2c;
+  --full-black-color: #000000; // for buttons
+  --grey-text-color: #505050;
 
-    /* Universal colors */
-    --dark-green: #7EB101;
-    --hover-green: #BBF330;
-    --noclean-white: #FEFEFE;
-    --orange-def: #FFE550;
+  /* Universal colors */
+  --dark-green: #7eb101;
+  --hover-green: #bbf330;
+  --noclean-white: #fefefe;
+  --orange-def: #ffe550;
 
-    /* Angle radius */
-    --small-radius: 30px;
-    --full-round: 50%;
+  /*button colors*/
+  --button-green: #bbf330;
+  --button-hover-green: #b5ff00;
+  --button-wh-bgc: #ffffff;
+	--button-hov-border-dark:
+  /* Angle radius */
+  --small-radius: 30px;
+  --full-round: 50%;
 
-    /* Card gap`s distance */
-    --card-gap: 32px;
+  /* Card gap`s distance */
+  --card-gap: 32px;
 
-    /* Number of cards in a row */
-    --card-numbers: 1;
+  /* Number of cards in a row */
+  --card-numbers: 1;
 
-    /* Transition for :hover & :focus */
-    --animation-time: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Transition for :hover & :focus */
+  --animation-time: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    // For Header
+  // For Header
 
-    // Hero-section
+  // Hero-section
 
-    // Offerings-section
+  // Offerings-section
 
-    // Favorites-section
+  // Favorites-section
 
-    // Customers say
+  // Customers say
 
-    // Subscribe-section
+  // Subscribe-section
 
-    // For footer
+  // For footer
 }

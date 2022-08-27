@@ -1,0 +1,82 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px 18px;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--typical-text-color);
+  line-height: 1.54;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: var(--button-green);
+  transition: background-color var(--animation-time);
+}
+/*
+	|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+		~ ~ ~ ~ Прописати в парселі Header ~ ~ ~ ~
+		|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+*/
+// .header {
+//   .button {
+//     @include mq(only_mob) {
+//       display: none;
+//     }
+//     @include mq(tab) {
+//
+//       font-size: 14;
+//       line-height: 1.5;
+//     }
+//   }
+//   .button:hover,
+//   .button:focus {
+//     background-color: var(--button-hover-green);
+//   }
+// }
+
+/*
+	|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+		~ ~ ~ ~ Прописати в парселі Offerings ~ ~ ~ ~
+		|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+*/
+// .offerings {
+//   .button {
+//     font-weight: 500;
+//     background-color: var(--button-wh-bgc);
+//     border: 2px solid var(--dark-green);
+//     padding: 10px 22px;
+//   }
+//   .button:hover,
+//   .button:focus {
+//     border-color: var(--button-hov-border-dark);
+//   }
+// }
+
+/*
+	|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+		~ ~ ~ ~ В Subscribe просто перевикористовуємо клас .button ~ ~ ~ ~
+		|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+*/
+
+/*
+	|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+		~ ~ ~ ~ в футері для subscribe прописати  ~ ~ ~ ~
+		|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+*/
+
+// .footer {
+//   .button {
+//     background-color: var(--button-wh-bgc);
+//     border: 0.85px solid var(--dark-green);
+//   }
+//   .button:hover,
+//   .button:focus {
+//     background-color: var(--orange-def);
+//   }
+// }
