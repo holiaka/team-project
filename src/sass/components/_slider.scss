@@ -1,39 +1,99 @@
-    .container {
-        max-width: 700px;
-        margin: 0 auto;
-    }
+/*!
+* chiefSlider
+*   site: https://itchief.ru/javascript/slider
+*   github: https://github.com/itchief/ui-components
+*
+* Copyright 2018-2021 Alexander Maltsev
+* Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+*/
 
-    .slider__wrapper {
-        overflow: hidden;
-    }
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
 
-    .slider__item {
-        flex: 0 0 50%;
-        max-width: 50%;
-        height: 250px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 7rem;
-    }
+.slider {
+    position: relative;
+}
 
-    .slider__item:nth-child(1) {
-        background-color: #f44336;
-    }
+.slider__wrapper {
+    overflow: hidden;
+}
 
-    .slider__item:nth-child(2) {
-        background-color: #9c27b0;
-    }
+.slider__items {
+    display: flex;
+    transition: transform 0.5s ease;
+}
 
-    .slider__item:nth-child(3) {
-        background-color: #3f51b5;
-    }
+.slider_disable-transition {
+    transition: none;
+}
 
-    .slider__item:nth-child(4) {
-        background-color: #03a9f4;
-    }
+.slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 7rem;
+    color: black;
+    user-select: none;
+}
 
-    .slider__item:nth-child(5) {
-        background-color: #4caf50;
-    }
+/* кнопки влево и вправо */
+
+.slider__control {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    background: rgb(0 0 0 / 20%);
+    border: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.slider__control_hide {
+    display: none;
+}
+
+.slider__control[data-slide="prev"] {
+    left: 0;
+}
+
+.slider__control[data-slide="next"] {
+    right: 0;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    background: rgb(0 0 0 / 30%);
+    outline: 0;
+}
+
+.slider__control::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__control[data-slide="prev"]::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control[data-slide="next"]::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
