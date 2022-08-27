@@ -1,4 +1,71 @@
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
+<!DOCTYPE html>
+<section class="favorites">
+  <h2 class="favorites__title">Some of Our Favorites</h2>
+  <p class="favorites__text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </p>
+  <ul class="favorites__list">
+    <li class="favorites__item">
+      <picture>
+        <!-- descktop -->
+        <source
+          media="(min-width:1280px )"
+          srcset="
+            ./images/favorites/img-1_desk_@1x.webp 1x,
+            ./images/favorites/img-1_desk_@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width:1280px )"
+          srcset="
+            ./images/favorites/img-1_desk_@1x.png 1x,
+            ./images/favorites/img-1_desk_@2x.png 2x
+          "
+          type="image/png"
+        />
+        <!-- tablet -->
+        <source
+          media="(min-width:768px )"
+          srcset="
+            ./images/favorites/img-1_tab_@1x.webp 1x,
+            ./images/favorites/img-1_tab_@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width:768px )"
+          srcset="
+            ./images/favorites/img-1_tab_@1x.png 1x,
+            ./images/favorites/img-1_tab_@2x.png 2x
+          "
+          type="image/png"
+        />
+        <!-- mobile -->
+        <source
+          media="(min-width:480px )"
+          srcset="
+            ./images/favorites/img-1_mob_@1x.webp 1x,
+            ./images/favorites/img-1_mob_@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width:480px )"
+          srcset="
+            ./images/favorites/img-1_mob_@1x.png 1x,
+            ./images/favorites/img-1_mob_@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="favorites__img"
+          src="./images/favorites/img-1_desk_@1x.png"
+          alt="Фото двох баскетболістів з мячем"
+          width="315"
+          height="315"
+        />
+      </picture>
+    </li>
+  </ul>
+</section>
