@@ -1,5 +1,13 @@
 .favorites {
+  text-align: center;
+
+  &__text {
+    margin-bottom: 60px;
+  }
   @include mq(tab) {
+    --card-numbers: 2;
+  }
+  @include mq(desk) {
     --card-numbers: 3;
   }
   @include mq(only_mob) {
@@ -18,6 +26,8 @@
   &__link {
     display: flex;
     overflow: hidden;
+    border-radius: 50%;
+    border: 11px solid var(--orange-def);
     @include mq(tab) {
       padding: 24px;
     }
@@ -32,17 +42,11 @@
     max-width: 100%;
   }
   &__item {
-    border-radius: 50%;
-    border: 11px solid var(--orange-def);
     max-width: 280px;
     // max-height: 280px;
     @include mq(tab) {
       max-width: 338px;
-      // max-height: 338x;
     }
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
   }
   &__link:hover,
   &__link:focus {
@@ -51,4 +55,8 @@
   @extend %section-padding;
   @extend %section-title;
   @extend %container;
+  &__title {
+    @extend %section-title;
+    margin-bottom: 20px;
+  }
 }
