@@ -1,5 +1,28 @@
 .hero {
-    height: 200px;
-    width: 1000px;
-    background-color: rgb(109, 125, 232);
+
+    @extend %section-padding;
+
+    &__container{
+        @extend %container;
+        display: flex;
+        gap: 130px;
+    }
+
+    &__list{
+        display: flex;
+        height: 528px;
+        width: 528px;
+
+        border-radius: var(--full-round);
+        border: 26px solid var(--orange-def);
+    }
+
+    &__item{
+        height: 528px;
+        width: 528px;      
+    }
+    
+    &__img-link{
+        display: block;
+    }
 }
