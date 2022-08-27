@@ -3,6 +3,18 @@
 
   &__text {
     margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    @include mq(tab) {
+      font-size: 16px;
+      line-height: 1.19;
+    }
+  }
+  @include mq(only_mob) {
+    &__item:nth-child(n + 4) {
+      display: none;
+    }
   }
   @include mq(tab) {
     --card-numbers: 2;
@@ -10,11 +22,7 @@
   @include mq(desk) {
     --card-numbers: 3;
   }
-  @include mq(only_mob) {
-    &__item:nth-child(n + 4) {
-      display: none;
-    }
-  }
+
   &__list {
     @include mq(only_mob) {
       align-items: center;
