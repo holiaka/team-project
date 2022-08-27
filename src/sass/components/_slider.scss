@@ -6,12 +6,6 @@
 * Copyright 2018-2021 Alexander Maltsev
 * Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
 */
-
-.container {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
 .slider {
     position: relative;
 }
@@ -22,7 +16,7 @@
 
 .slider__items {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform var(--animation-time);
 }
 
 .slider_disable-transition {

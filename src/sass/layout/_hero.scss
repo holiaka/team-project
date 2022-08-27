@@ -5,22 +5,35 @@
     &__container{
         @extend %container;
         display: flex;
-        gap: 130px;
+        gap: 152px;
+        justify-content: space-between;
     }
 
-    &__list{
+    &__text{
+        height: 502px;
         display: flex;
-        height: 528px;
-        width: 528px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    &__title{
+        @extend %section-title;
+
+        @include mq(desk){
+            font-size: 48px;
+        }
+    }
+
+    &__img-box{
+        
+        height: 580px;
+        width: 580px;
 
         border-radius: var(--full-round);
         border: 26px solid var(--orange-def);
     }
 
-    &__item{
-        height: 528px;
-        width: 528px;      
-    }
+
     
     
 
