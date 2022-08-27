@@ -28,10 +28,14 @@
     overflow: hidden;
     border-radius: 50%;
     border: 11px solid var(--orange-def);
+    padding: 18px;
+    transition: var(--animation-time);
     @include mq(tab) {
       padding: 24px;
     }
-    padding: 18px;
+    @include mq(desk) {
+      padding: 29px;
+    }
 
     @extend %reset-link;
   }
@@ -43,9 +47,11 @@
   }
   &__item {
     max-width: 280px;
-    // max-height: 280px;
     @include mq(tab) {
       max-width: 338px;
+    }
+    @include mq(desk) {
+      max-width: 396px;
     }
   }
   &__link:hover,
