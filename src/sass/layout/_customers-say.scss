@@ -3,7 +3,6 @@
   padding-bottom: 89px;
 
   @extend %container;
-  @extend %section-padding;
 
   &__overlay {
     max-width: 480px;
@@ -13,10 +12,39 @@
     background-position: bottom;
   }
 }
+.customers-container {
+  &__title {
+    margin-bottom: 20px;
+    @extend %section-title;
+  }
+  &__desc {
+    margin-bottom: 32px;
+  }
 
-.section-title {
-  margin-bottom: 20px;
-  @extend %section-title;
+  &__txt {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  &__stars {
+    padding-bottom: 28px;
+  }
+}
+
+.customers-container__card {
+  display: flex;
+
+  &--img {
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+  }
+  &--name {
+    display: block;
+    font-weight: 600;
+    padding-right: 16px;
+    border-right: 0.85px solid #7eb101;
+  }
 }
 
 .customers-container__item {
@@ -28,25 +56,8 @@
   border-radius: 0 30px 30px 30px;
 
   @extend %reset-list;
-}
 
-.customers-container {
-  &__item:not(:last-child) {
+  &:not(:last-child) {
     margin-bottom: 24px;
-  }
-  &__txt {
-    margin-bottom: 40px;
-  }
-  &__desc {
-    display: flex;
-  }
-  &__img {
-    width: 48px;
-    height: 48px;
-    margin-right: 16px;
-  }
-  &__custom-name {
-    padding-right: 16px;
-    border-right: 0.854167px solid #7eb101;
   }
 }
