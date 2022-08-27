@@ -4,21 +4,56 @@
 
   @extend %container;
 
+  @include mq(tab) {
+    padding-top: 59px;
+    padding-bottom: 115px;
+  }
+  @include mq(desk) {
+    padding-top: 100px;
+    padding-bottom: 213px;
+  }
+
   &__overlay {
-    max-width: 480px;
-    background-image: url(../images/customers-say/bg-320.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    background-image: url(../images/customers-say/bg-320.png);
+
+    @include mq(tab) {
+      background-image: url(../images/customers-say/bg-768.png);
+    }
+    @include mq(desk) {
+      background-image: url(../images/customers-say/bg-1280.png);
+    }
   }
 }
 .customers-container {
   &__title {
     margin-bottom: 20px;
+
     @extend %section-title;
+
+    @include mq(tab) {
+      font-size: 42px;
+      margin-bottom: 48px;
+    }
+    @include mq(desk) {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+    &__card--img {
+      border-radius: 50%;
+    }
   }
+
   &__desc {
     margin-bottom: 32px;
+    @include mq(tab) {
+      font-size: 16px;
+    }
+    @include mq(desk) {
+      font-size: 16px;
+    }
   }
 
   &__txt {
@@ -33,6 +68,9 @@
 
 .customers-container__card {
   display: flex;
+  &:not(:last-child) {
+    margin-right: 139px;
+  }
 
   &--img {
     width: 48px;
@@ -46,7 +84,14 @@
     border-right: 0.85px solid #7eb101;
   }
 }
-
+.customers-container__list {
+  @include mq(tab) {
+    display: flex;
+  }
+  @include mq(desk) {
+    display: flex;
+  }
+}
 .customers-container__item {
   width: 280px;
   padding: 8px;
@@ -56,6 +101,15 @@
   border-radius: 0 30px 30px 30px;
 
   @extend %reset-list;
+
+  @include mq(tab) {
+    width: 336px;
+    height: 244px;
+  }
+  @include mq(desk) {
+    width: 500px;
+    height: 227px;
+  }
 
   &:not(:last-child) {
     margin-bottom: 24px;
