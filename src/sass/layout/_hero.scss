@@ -1,6 +1,10 @@
 .hero {
 
     @extend %section-padding;
+    @include mq(desk){
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 
     &__container{
         @extend %container;
@@ -10,7 +14,8 @@
     }
 
     &__text{
-        height: 502px;
+        width: 502px;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -21,20 +26,13 @@
 
         @include mq(desk){
             font-size: 48px;
+            margin-bottom: 28px;
         }
     }
 
-    &__img-box{
-        
-        height: 580px;
-        width: 580px;
-
-        border-radius: var(--full-round);
-        border: 26px solid var(--orange-def);
+    &__discr{
+        margin-bottom: 28px;
     }
-
-
-    
     
 
 }
