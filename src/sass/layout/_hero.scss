@@ -1,5 +1,91 @@
 .hero {
-    height: 200px;
-    width: 1000px;
-    background-color: rgb(109, 125, 232);
+    @extend %section-padding;
+    padding-bottom: 50px;
+
+    @include mq(tab) {
+        padding-top: 60px;
+        padding-bottom: 0px;
+    }
+
+    @include mq(desk){
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    &__container{
+        @extend %container;
+        display: flex;        
+        justify-content: space-between;
+
+        @include mq(only_mob) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px
+        }
+
+        @include mq(only_tab) {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px
+        }
+
+        @include mq(desk){
+            gap: 152px;
+        }
+
+    }
+ 
+    &__text{        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include mq(only_mob){
+            gap: 20px;
+        }
+        @include mq(only_tab) {
+            max-width: calc( (100% - 40px) / 2);
+        }
+
+        @include mq(desk) {
+            max-width: 502px;
+        }        
+    }
+    
+    &__title{
+        @extend %section-title;
+
+        @include mq(tab){
+            display: block;
+            margin-bottom: 44px;
+        }
+
+        @include mq(desk){
+            font-size: 48px;
+            margin-bottom: 28px;
+            line-height: 1.2;
+        }
+    }
+
+    
+    &__discr{
+        line-height: 1.5;
+        
+        @include mq(tab) {
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+
+        @include mq(desk) {
+        margin-bottom: 28px;
+        }
+    }
+
+    &__button {
+        @include mq (only_tab){
+            margin-bottom: 73px;
+        }
+        
+    }
 }

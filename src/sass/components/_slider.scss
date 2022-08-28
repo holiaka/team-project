@@ -1,0 +1,165 @@
+.slider {
+    @include mq(only_mob){
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    border-radius: var(--full-round);
+    transition: border-color var(--animation-time);
+
+    position: relative;
+
+    @include mq(tab){
+        display: flex;
+        align-self: flex-end;
+        justify-content: center; 
+        align-items: center;
+        height: 320px;
+        width: 320px;
+        border: 14px solid var(--orange-def);
+    }
+
+    @include mq(desk) {
+        display: flex;
+        justify-content: center;
+        align-items: center;                
+        height: 580px;
+        width: 580px;    
+        border: 26px solid var(--orange-def);
+    }
+
+    &__wrapper {
+    border-radius: var(--full-round);
+    overflow: hidden;
+    }
+
+    &__items {
+    display: flex;
+    transition: transform var(--animation-time);
+    }
+
+    &__item {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;       
+    user-select: none;
+    }
+
+    &__img-link:hover .slider,
+    &__img-link:focus .slider{
+        border-color: var(--hover-green);
+    }
+
+    /* Buttoms */
+    &__buttom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;       
+        top: 50%;
+        transform: translateY(-50%);
+      }
+        
+    &__bottom--left{
+        position: absolute;
+
+        left: -30px;
+
+        @include mq(desk) {
+        left: -40px;
+        }
+    }
+
+    &__bottom--right{
+        position: absolute;
+
+        right: -30px;
+
+        @include mq(desk) {
+        right: -40px;
+        }
+    }
+    
+    &__control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 42px;        
+
+        border: none;
+        background-color: transparent;
+        
+        cursor: pointer;  
+        
+        @include mq(desk){
+            width: 60px;
+            height: 50px;
+        }
+    }
+
+    &__icon{
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        @include mq(tab){
+           width: 39px;  
+        }
+
+        @include mq(desk) {
+            width: 56px;
+        }
+    }
+
+    &__vector{
+        display: flex;
+        flex-shrink: 0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+        fill: var(--typical-text-color);
+    }
+
+    // Active state
+
+    &:hover,
+    &:focus {
+    border-color: var(--hover-green);
+    }
+
+    &__vector--hover {
+    opacity: 0;
+    transition: opacity var(--animation-time);
+    }
+
+    &__control:hover~&__icon &__vector--hover,
+    &__control:focus~&__icon &__vector--hover {
+    opacity: 1;
+    }
+
+    &__control:active~&__icon &__vector {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    fill: var(--typical-text-color)
+    }
+}
+
+
+
+
+
+
+
+
