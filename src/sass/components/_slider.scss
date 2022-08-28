@@ -73,12 +73,22 @@
         
     &__bottom--left{
         position: absolute;
+
+        left: -30px;
+
+        @include mq(desk) {
         left: -40px;
+        }
     }
 
     &__bottom--right{
         position: absolute;
+
+        right: -30px;
+
+        @include mq(desk) {
         right: -40px;
+        }
     }
     
     &__control {
@@ -89,13 +99,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 60px;
-        height: 50px;        
+        width: 50px;
+        height: 42px;        
 
         border: none;
         background-color: transparent;
         
-        cursor: pointer;    
+        cursor: pointer;  
+        
+        @include mq(desk){
+            width: 60px;
+            height: 50px;
+        }
     }
 
     &__icon{
