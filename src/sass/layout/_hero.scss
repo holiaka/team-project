@@ -1,6 +1,12 @@
 .hero {
-
     @extend %section-padding;
+    padding-bottom: 50px;
+
+    @include mq(tab) {
+        padding-top: 60px;
+        padding-bottom: 0px;
+    }
+
     @include mq(desk){
         padding-top: 16px;
         padding-bottom: 16px;
@@ -8,30 +14,69 @@
 
     &__container{
         @extend %container;
-        display: flex;
-        gap: 152px;
+        display: flex;        
         justify-content: space-between;
+
+        @include mq(only_mob) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px
+        }
+
+        @include mq(only_tab) {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px
+        }
+
+        @include mq(desk){
+            gap: 152px;
+        }
+
     }
-
-    &__text{
-        width: 502px;
-
+ 
+    &__text{        
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @include mq(only_mob){
+            gap: 20px;
+        }
+        @include mq(only_tab) {
+            max-width: calc( (100% - 40px) / 2);
+        }
+
+        @include mq(desk) {
+            max-width: 502px;
+        }        
     }
     
     &__title{
         @extend %section-title;
 
+        @include mq(tab){
+            display: block;
+            font-size: 48px;
+            margin-bottom: 28px;
+            min-height: 500px;
+        }
+
         @include mq(desk){
             font-size: 48px;
             margin-bottom: 28px;
+            min-height: 500px;
         }
     }
 
+    
     &__discr{
+        line-height: 1.5;        
+
+        @include mq(desk) {
         margin-bottom: 28px;
+        }
     }
     
 
