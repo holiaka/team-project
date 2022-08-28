@@ -1,5 +1,8 @@
 .footer {
   @media screen and (min-width: 480px) {
+    background-image: url('/assets/footer.bgr.mobile.apple.png'),
+      url('/assets/footer.bgr.mobile.citrus.png'),
+      url('/assets/footer.bgr.mobile.fruitmix.png');
     background-repeat: no-repeat;
     width: 320px;
     height: 690px;

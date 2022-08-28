@@ -19,19 +19,28 @@
           <li class="nav__item item-nav">Contact</li>
         </ul>
       </nav>
-      <div class="footer__form form">
-        <h3>Subscribe</h3>
-        <form class="" autocomplete="off" novalidate>
-          <label class="" for="user_email">
+      <div class="footer__form-container form-container">
+        <h3
+          class="form-container__uppertitle uppertitle--form-footer uppertitle"
+        >
+          Subscribe
+        </h3>
+        <form class="form-container__form" autocomplete="off" novalidate>
+          <label class="form-container__label" for="user_email">
             <input
-              class="footer__form-input--email"
+              class="form-container__input input--footer-email input"
               type="email"
               name="email"
               placeholder="Enter your email"
               required
             />
           </label>
-          <button class="button" type="submit">Subscribe</button>
+          <button
+            class="form-container__button button--footer button"
+            type="submit"
+          >
+            Subscribe
+          </button>
           <span class=""
             >By subscribing you agree to with our
             <a class="link" href="">Privacy Policy</a>
