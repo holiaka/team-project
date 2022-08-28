@@ -1,5 +1,37 @@
 .offerings__container {
   @extend %container;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+  }
+}
+.offerings-list {
+  @extend %reset-list;
+  gap: 28px;
+  margin-bottom: 28px;
+  @media screen and (min-width: 768px) {
+    --card-gap: 116px;
+    --card-numbers: 2;
+  }
+}
+.offerings-list__link {
+  @extend %reset-link;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  fill: #7eb101;
+  margin-bottom: 8px;
+}
+.offerings__link {
+  @extend %reset-link;
+  font-weight: 400;
+  font-size: 13.6667px;
+  line-height: 150%;
+  color: #000000;
 }
 .offerings {
   background-size: cover;
@@ -10,7 +42,7 @@
     background-image: url(../images/offerings/bg-mob@2x.png);
   }
   margin-top: 50px;
-  padding: 41px 20px 60px 20px;
+  padding: 41px 0px 60px 0px;
   @media screen and (min-width: 768px) {
     background-image: url(../images/offerings/bg-tab@1x.png);
     @media (min-device-pixel-ratio: 2),
@@ -18,7 +50,7 @@
       (min-resolution: 2dppx) {
       background-image: url(../images/offerings/bg-tab@2x.png);
     }
-    padding: 150px 32px 100px 32px;
+    padding: 150px 0px 100px 0px;
     margin-top: -108px;
   }
   @media screen and (min-width: 1280px) {
@@ -28,11 +60,111 @@
       (min-resolution: 2dppx) {
       background-image: url(../images/offerings/bg-desk@2x.png);
     }
-    padding: 177px 16px 75px 16px;
+    padding: 177px 0px 75px 0px;
     margin-top: -159px;
+  }
+}
+.offerings__title {
+  @extend %section-title;
+  margin-bottom: 28px;
+}
+.offerings__text {
+  margin-bottom: 28px;
+}
+.offerings-list__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  margin-bottom: 16px;
+}
+.offerings__btn {
+  cursor: pointer;
+  font-family: inherit;
+  padding: 10px 22px;
+  background: #fff;
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+  margin-right: 24px;
+  &:focus,
+  &:hover,
+  &:active {
+    border: 2px solid #597d00;
   }
 }
 .offerings__img-2,
 .offerings__img-3 {
   display: none;
+}
+.apples {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.apple-1 {
+  margin: 0;
+  margin-bottom: 80px;
+  width: 280px;
+  height: 280px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center -30px;
+  background-image: url(../images/offerings/apple-mob@1x.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/offerings/apple-mob@2x.png);
+  }
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 357px;
+    height: 357px;
+    margin-bottom: 60px;
+    background-image: url(../images/offerings/apple-1-tab@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/apple-1-tab@2x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    width: 550px;
+    height: 550px;
+    background-image: url(../images/offerings/apple-desk@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/apple-desk@2x.png);
+    }
+  }
+}
+.apple-2 {
+  display: none;
+  width: 166px;
+  height: 211px;
+  background-image: url(../images/offerings/apple-2-tab@1x.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/offerings/apple-2-tab@2x.png);
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: block;
+    margin-left: 29px;
+  }
+}
+.apple-3 {
+  display: none;
+  width: 108px;
+  height: 136px;
+  background-image: url(../images/offerings/apple-3-tab@1x.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/offerings/apple-3-tab@2x.png);
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: block;
+    margin-left: 44px;
+  }
 }
