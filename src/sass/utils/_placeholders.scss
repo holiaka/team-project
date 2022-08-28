@@ -1,68 +1,66 @@
 /* Conteiner for elements */
 
-%container {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+%container {    
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-  }
+    @media screen and (min-width: 480px){
+        max-width: 480px;        
+    }
 
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
+    @media screen and (min-width: 768px){
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;        
+    }
 
-  @media screen and (min-width: 1280px) {
-    max-width: 1280px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+    @media screen and (min-width: 1280px){
+        max-width: 1280px;
+        padding-left: 16px;
+        padding-right: 16px;        
+    }
 }
 
 /* ***Sections padding */
 
 %section-padding {
-  padding-top: 60px;
-  padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-  @media screen and (min-width: 768px) {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+    @media screen and (min-width: 768px){
+        padding-top: 100px;
+        padding-bottom: 100px;        
+    }    
 }
 
 //  Reset primary features
 
 %reset-list {
-  list-style: none;
+    list-style: none;
 }
 
 %reset-link {
-  text-decoration: none;
-  color: currentColor;
+    text-decoration: none;
+    color: currentColor;
 }
 
 // Title text for section
-%section-title {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.18;
+%section-title{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
 
-  @media screen and (min-width: 768px) {
-    font-size: 42px;
-    line-height: 1.17;
-  }
+    @media screen and (min-width: 768px) {
+        font-size: 42px;
+        line-height: 1.17;       
+    }
 }
 
 // Slider buttons
-%slider-buttons {
-  height: 34px;
-  width: 28px;
+%slider-buttons{
+    height: 34px;
+    width: 28px;
 }
-
-
