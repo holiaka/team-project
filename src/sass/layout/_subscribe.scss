@@ -1,0 +1,59 @@
+.subscribe {
+  padding: 0 20px;
+  width: 320px;
+
+  .image-deskt {
+    display: none;
+  }
+  .image-tablete {
+    display: none;
+  }
+  .subscribe__image {
+    position: relative;
+    top: -60px;
+    left: 90px;
+    z-index: index 100;
+  }
+
+  @include mq(tab) {
+    .image-deskt {
+      display: none;
+    }
+
+    .subscribe__image {
+      display: none;
+    }
+  }
+
+  @include mq(desk) {
+    .image-tablete {
+      display: none;
+    }
+    .subscribe__image {
+      display: none;
+    }
+  }
+}
+.subscribe__image {
+  margin-bottom: 17px;
+}
+
+.subscribe__block {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.subscribe__uppertitle {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.subscribe__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 40px;
+}

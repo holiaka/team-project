@@ -19,6 +19,15 @@
     width: 1280px;
     height: 395px;
   }
+
+  .button {
+    background-color: var(--button-wh-bgc);
+    border: 0.85px solid var(--dark-green);
+  }
+  .button:hover,
+  .button:focus {
+    background-color: var(--orange-def);
+  }
 }
 
 .nav-form__logo {
@@ -26,4 +35,14 @@
   position: absolute;
   top: 60px;
   left: 20px;
+}
+
+.subscribe__image {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+subscribe__block {
+  display: flex;
 }
