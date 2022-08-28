@@ -1,9 +1,9 @@
 .footer {
+  display: block;
+  align-items: center;
+
+  position: relative;
   @media screen and (min-width: 480px) {
-    background-image: url('/assets/footer.bgr.mobile.apple.png'),
-      url('/assets/footer.bgr.mobile.citrus.png'),
-      url('/assets/footer.bgr.mobile.fruitmix.png');
-    background-repeat: no-repeat;
     width: 320px;
     height: 690px;
   }
@@ -21,7 +21,9 @@
   }
 }
 
-.footer__logo {
+.nav-form__logo {
   display: block;
-  background-color: black;
+  position: absolute;
+  top: 60px;
+  left: 20px;
 }
