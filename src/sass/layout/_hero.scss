@@ -64,7 +64,7 @@
         @include mq(desk){
             font-size: 48px;
             margin-bottom: 28px;
-            line-height: 1.2;
+            line-height: 1.2nyp;
         }
     }
 
@@ -83,8 +83,10 @@
     }
 
     &__button {
+        margin-left: 0;
         @include mq (only_tab){
             margin-bottom: 73px;
+            
         }
         
     }
