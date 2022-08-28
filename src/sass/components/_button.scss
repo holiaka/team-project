@@ -23,40 +23,40 @@
 		~ ~ ~ ~ Прописати в парселі Header ~ ~ ~ ~
 		|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
 */
-// .header {
-//   .button {
-//     @include mq(only_mob) {
-//       display: none;
-//     }
-//     @include mq(tab) {
-//
-//       font-size: 14;
-//       line-height: 1.5;
-//     }
-//   }
-//   .button:hover,
-//   .button:focus {
-//     background-color: var(--button-hover-green);
-//   }
-// }
+.header {
+  .button {
+    @include mq(only_mob) {
+      display: none;
+    }
+    @include mq(tab) {
+
+      font-size: 14;
+      line-height: 1.5;
+    }
+  }
+  .button:hover,
+  .button:focus {
+    background-color: var(--button-hover-green);
+  }
+}
 
 /*
 	|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
 		~ ~ ~ ~ Прописати в парселі Offerings ~ ~ ~ ~
 		|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
 */
-// .offerings {
-//   .button {
-//     font-weight: 500;
-//     background-color: var(--button-wh-bgc);
-//     border: 2px solid var(--dark-green);
-//     padding: 10px 22px;
-//   }
-//   .button:hover,
-//   .button:focus {
-//     border-color: var(--button-hov-border-dark);
-//   }
-// }
+.offerings {
+  .button {
+    font-weight: 500;
+    background-color: var(--button-wh-bgc);
+    border: 2px solid var(--dark-green);
+    padding: 10px 22px;
+  }
+  .button:hover,
+  .button:focus {
+    border-color: var(--button-hov-border-dark);
+  }
+}
 
 /*
 	|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
@@ -70,13 +70,13 @@
 		|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
 */
 
-// .footer {
-//   .button {
-//     background-color: var(--button-wh-bgc);
-//     border: 0.85px solid var(--dark-green);
-//   }
-//   .button:hover,
-//   .button:focus {
-//     background-color: var(--orange-def);
-//   }
-// }
+.footer {
+  .button {
+    background-color: var(--button-wh-bgc);
+    border: 0.85px solid var(--dark-green);
+  }
+  .button:hover,
+  .button:focus {
+    background-color: var(--orange-def);
+  }
+}
