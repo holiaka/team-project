@@ -21,7 +21,6 @@
 
 .footer__nav-form {
   display: flex;
-  padding: 40px 0;
 
   margin-bottom: 40px;
 }
@@ -31,5 +30,17 @@
 }
 
 .nav__list {
+  @extend %reset-list;
+}
+
+.nav__item {
   margin-bottom: 20px;
+}
+
+.nav__item:last-child {
+  margin-bottom: 0px;
+}
+
+.form__uppertitle {
+  margin-bottom: 12px;
 }
