@@ -25,52 +25,78 @@
     flex: 0 0 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: rgba(255, 255, 255, 0.8);    
+    align-items: center;       
     user-select: none;
     }
 
+    &__img-link:hover .slider,
+    &__img-link:focus .slider{
+        border-color: var(--hover-green);
+    }
+
     /* Buttoms */
+    &__buttom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;       
+        top: 50%;
+        transform: translateY(-50%);        
+    }
+        
+    &__bottom--left{
+        position: absolute;
+        left: -40px;
+    }
+
+    &__bottom--right{
+        position: absolute;
+        right: -40px;
+    }
     
     &__control {
         position: absolute;
         top: 50%;
+        transform: translateY(-50%);
+
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80px;
-        height: 80px;
-        color: #fff;
-        text-align: center;
-        background: rgb(0 0 0 / 20%);
+        width: 60px;
+        height: 50px;        
+
         border: none;
-        transform: translateY(-50%);
-        cursor: pointer;
-    }
+        background-color: transparent;
+        
+        cursor: pointer;    
+    }    
 
-    &__control[data-slide="prev"] {
-    left: -52px;
-    }
-
-    &__control[data-slide="next"] {
-    right: -52px;
-    }
-
-    &__control:hover,
-    &__control:focus {
+    // &__control:hover,
+    // &__control:focus {
            
-        background: rgb(0 0 0 / 30%);
 
-    }
+    // }
 
     &__icon{
-        display: block;
-        width: 48px;
-        height: 40px;
-        cursor: pointer;        
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        width: 56px;       
     }
 
     &__vector{
-        cursor: pointer;
+        flex-shrink: 0;
     }
+
+    &__wrapper:hover .slider,
+    &__wrapper:focus .slider{
+    border-color: var(--hover-green);
 }
+}
+
+// .slider:hover,
+// .slider:focus {
+//     border-color: var(--hover-green);
+// }
+
