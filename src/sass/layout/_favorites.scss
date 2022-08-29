@@ -1,0 +1,77 @@
+.favorites {
+  text-align: center;
+
+  &__text {
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    @include mq(tab) {
+      font-size: 16px;
+      line-height: 1.19;
+    }
+  }
+
+  @include mq(only_mob) {
+    &__item:nth-child(n + 4) {
+      display: none;
+    }
+  }
+  @include mq(tab) {
+    --card-numbers: 2;
+  }
+  @include mq(desk) {
+    --card-numbers: 3;
+  }
+
+  &__list {
+    @include mq(only_mob) {
+      align-items: center;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+    @extend %reset-list;
+  }
+  &__link {
+    display: flex;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 11px solid var(--orange-def);
+    padding: 18px;
+    transition: var(--animation-time);
+    @include mq(tab) {
+      padding: 24px;
+    }
+    @include mq(desk) {
+      padding: 29px;
+    }
+
+    @extend %reset-link;
+  }
+  &__pic {
+    overflow: hidden;
+  }
+  &__img {
+    max-width: 100%;
+  }
+  &__item {
+    max-width: 280px;
+    @include mq(tab) {
+      max-width: 338px;
+    }
+    @include mq(desk) {
+      max-width: 396px;
+    }
+  }
+  &__link:hover,
+  &__link:focus {
+    border-color: var(--hover-green);
+  }
+  @extend %section-padding;
+  @extend %section-title;
+  @extend %container;
+  &__title {
+    @extend %section-title;
+    margin-bottom: 20px;
+  }
+}

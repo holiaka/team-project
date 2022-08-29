@@ -7,9 +7,6 @@
   margin-right: auto;
   width: 100%;
 
-  outline: 2px dashed red;
-  outline-offset: -2px;
-
   @media screen and (min-width: 480px) {
     max-width: 480px;
   }
@@ -60,4 +57,3 @@
     font-size: 42px;
     line-height: 1.17;
   }
-}
