@@ -70,13 +70,13 @@
 		|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
 */
 
-// .footer {
-//  .button {
-//    background-color: var(--button-wh-bgc);
-//    border: 0.85px solid var(--dark-green);
-//     }
-//  .button:hover,
-//  .button:focus {
-//    background-color: var(--orange-def);
-//  }
-// }
+.footer {
+  .button {
+    background-color: var(--button-wh-bgc);
+    border: 0.85px solid var(--dark-green);
+  }
+  .button:hover,
+  .button:focus {
+    background-color: var(--orange-def);
+  }
+}
