@@ -1,10 +1,6 @@
 .footer {
   display: flex;
   align-items: center;
-  max-width: 480px;
-  min-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
 
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 
@@ -15,14 +11,17 @@
   }
 }
 
-.information-copyright__list {
-  @extend %reset-list;
-}
-
 .footer__nav-form {
   display: flex;
 
   margin-bottom: 40px;
+}
+
+.footer__nav {
+}
+
+.information-copyright__list {
+  @extend %reset-list;
 }
 
 .nav-form__logo {
@@ -31,10 +30,24 @@
 
 .nav__list {
   @extend %reset-list;
+  @include mq(tab) {
+    display: flex;
+  }
+  @include mq(desk) {
+    display: flex;
+  }
 }
 
 .nav__item {
   margin-bottom: 20px;
+
+  @include mq(tab) {
+    margin-bottom: none;
+    margin-right: 28px;
+  }
+  @include mq(desk) {
+    display: flex;
+  }
 }
 
 .nav__item:last-child {
@@ -49,9 +62,17 @@
   margin-bottom: 12px;
 }
 
+.form {
+  @include mq(tab) {
+    display: flex;
+  }
+  @include mq(desk) {
+    display: flex;
+  }
+}
 .form__input {
   border: 0.854167px solid #ffe550;
-  width: 100%;
+  width: 279px;
   height: 42px;
   padding: 12px;
   border-radius: 30px;
@@ -81,26 +102,26 @@
   color: #7eb101;
 }
 
-.information-copyright {
+.footer__information-copyright {
   font-weight: 400;
   font-size: 10px;
-  line-height: calc (12px / 10px);
+  line-height: 1.2;
 }
 
-.information-copyright__list {
+.footer__information-copyright--list {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
 }
 
-.link--information {
+.footer__information-copyright--link {
   @extend %reset-link;
 
   text-decoration-line: underline;
   color: #7eb101;
 }
 
-.information-copyright__text {
+.footer__information-copyright--text {
   display: flex;
   align-items: center;
   justify-content: center;
