@@ -1,0 +1,52 @@
+<div class="backdrop backdrop--is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__btn" type="button" data-modal-close>
+      <svg width="24" height="24">
+        <use href="./images/spryte/spryte.svg#cross"></use>
+      </svg>
+    </button>
+
+    <form class="modal-form" id="form" autocomplete="on" novalidate>
+      <strong class="modal-form__title">Order Form</strong>
+      <div class="modal-form__group" role="group">
+        <label class="modal-form__field">
+          <span class="modal-form__label">Name</span>
+          <input
+            class="modal-form__input"
+            type="text"
+            name="name"
+            placeholder="Your name"
+            required
+            minlength="3"
+            maxlength="25"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          />
+        </label>
+        <label class="modal-form__field">
+          <span class="modal-form__label">Phone number</span>
+          <input
+            class="modal-form__input"
+            type="tel"
+            name="tel"
+            placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            minlength="10"
+            maxlength="10"
+            required
+          />
+        </label>
+        <label class="modal-form__field">
+          <span class="modal-form__label">E-mail</span>
+          <input
+            class="modal-form__input"
+            type="email"
+            name="email"
+            placeholder="example@gmail.com"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
+          />
+        </label>
+      </div>
+      <button class="modal-form__btn" type="submit">Send</button>
+    </form>
+  </div>
+</div>
