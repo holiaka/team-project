@@ -1,97 +1,103 @@
-<footer class="footer section">
-  <!-------------------- BLOCK 1 ------------------------------>
+<footer class="footer footer-bgr-overlay" id="footer">
   <div class="footer__container">
-    <div class="footer__nav-form nav-form">
-      <a
-        class="nav-form__logo link"
-        href=""
-        target="_blank"
-        rel="noopener nonereferre"
-        aria-label="logo"
-      >
-        <img src="/assets/footer.logo.jpg" alt="logo" width="69" height="51" />
-      </a>
+    <!-------------------- BLOCK 1 ------------------------------>
+    <!----------- logo - navigation - form ------------------->
 
-      <!------------- navigation --------------------------->
+    <div class="footer__nav-form">
+      <!--------- logo - navigation----------------->
 
-      <nav class="footer__nav nav">
-        <ul class="nav__list list">
-          <li class="nav__item item-nav">
-            <a
-              class="nav__link link-nav link"
-              href=""
-              target="_blank"
-              rel="noopener nonereferre"
-              aria-label="Home"
-            ></a
-            >Home
-          </li>
-          <li class="nav__item item-nav">
-            <a
-              class="nav__link link-nav link"
-              href=""
-              target="_blank"
-              rel="noopener nonereferre"
-              aria-label="about"
-            ></a
-            >About
-          </li>
-          <li class="nav__item item-nav">
-            <a
-              class="nav__link link-nav link"
-              href=""
-              target="_blank"
-              rel="noopener nonereferre"
-              aria-label="service"
-            ></a
-            >Service
-          </li>
-          <li class="nav__item item-nav">
-            <a
-              class="nav__link link-nav link"
-              href=""
-              target="_blank"
-              rel="noopener nonereferre"
-              aria-label="menu"
-            ></a
-            >Menu
-          </li>
-          <li class="nav__item item-nav">
-            <a
-              class="nav__link link-nav link"
-              href=""
-              target="_blank"
-              rel="noopener nonereferre"
-              aria-label="contact"
-            ></a
-            >Contact
-          </li>
-        </ul>
-      </nav>
-    </div>
+      <div class="footer__nav">
+        <!-------------- logo ----------------->
+        <a
+          class="footer__nav-logo link"
+          href=""
+          target="_blank"
+          rel="noopener nonereferre"
+          aria-label="logo"
+        >
+          <img src="/assets/logo.png" alt="logo" width="69" height="51" />
+        </a>
 
-    <!------------------ BLOCK 2 ------------------------>
+        <!---------- navigation ------------->
 
-    <!------------ forma -------------------->
-    <div>
+        <nav class="footer__nav-nav nav">
+          <ul class="footer__nav-list list">
+            <li class="footer__nav-item">
+              <a
+                class="footer__nav-link link"
+                href=""
+                target="_blank"
+                rel="noopener nonereferre"
+                aria-label="Home"
+              ></a
+              >Home
+            </li>
+            <li class="footer__nav-item">
+              <a
+                class="footer__nav-link link"
+                href=""
+                target="_blank"
+                rel="noopener nonereferre"
+                aria-label="about"
+              ></a
+              >About
+            </li>
+            <li class="footer__nav-item">
+              <a
+                class="footer__nav-link link"
+                href=""
+                target="_blank"
+                rel="noopener nonereferre"
+                aria-label="service"
+              ></a
+              >Service
+            </li>
+            <li class="footer__nav-item">
+              <a
+                class="footer__nav-link link"
+                href=""
+                target="_blank"
+                rel="noopener nonereferre"
+                aria-label="menu"
+              ></a
+              >Menu
+            </li>
+            <li class="footer__nav-item">
+              <a
+                class="footer__nav-link link"
+                href=""
+                target="_blank"
+                rel="noopener nonereferre"
+                aria-label="contact"
+              ></a
+              >Contact
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!------------ forma -------------------->
+
       <div class="footer__form">
-        <h3 class="form__uppertitle uppertitle--form uppertitle">Subscribe</h3>
-        <form class="form" autocomplete="off" novalidate>
-          <label class="form__label" for="user_email">
+        <h3 class="footer__form-uppertitle">Subscribe</h3>
+        <form class="footer__form-includ" autocomplete="off" novalidate>
+          <label class="footer__form-includ--label" for="user_email">
             <input
-              class="form__input input--email input"
+              class="footer__form-includ--email"
               type="email"
               name="email"
               placeholder="Enter your email"
               required
             />
           </label>
-          <button class="form__button button" type="submit">Subscribe</button>
+          <button class="footer__form-includ--button button" type="submit">
+            Subscribe
+          </button>
         </form>
-        <span class="form__text text-span"
+        <span class="footer__form-includ--span"
           >By subscribing you agree to with our
           <a
-            class="form__link link-form link"
+            class="footer__form-includ--link link"
             href=""
             target="_blank"
             rel="noopener nonereferre"
@@ -100,46 +106,48 @@
           </a>
         </span>
       </div>
+    </div>
 
-      <!----  information-copyright  ----->
+    <!------------------ BLOCK 2 ------------------------>
 
-      <div class="footer__information-copyright">
-        <ul class="footer__information-copyright--list">
-          <li>
-            <a
-              class="footer__information-copyright--link"
-              href=""
-              target="_blank"
-              rel="noopener nonereferre"
-              aria-label="privacy policy"
-              >Privacy Policy</a
-            >
-          </li>
-          <li>
-            <a
-              class="footer__information-copyright--link"
-              href=""
-              target="_blank"
-              rel="noopener nonereferre"
-              aria-label="terms of service"
-              >Terms of Service</a
-            >
-          </li>
-          <li>
-            <a
-              class="footer__information-copyright--link"
-              href=""
-              target="_blank"
-              rel="noopener nonereferre"
-              aria-label="cookies settings"
-              >Cookies Settings
-            </a>
-          </li>
-        </ul>
-        <p class="footer__information-copyright--text">
-          2022 FoodSta. All right reserved.
-        </p>
-      </div>
+    <!----  information-copyright  ----->
+
+    <div class="footer__information-copyright">
+      <ul class="footer__information-copyright--list list">
+        <li>
+          <a
+            class="footer__information-copyright--link link"
+            href=""
+            target="_blank"
+            rel="noopener nonereferre"
+            aria-label="privacy policy"
+            >Privacy Policy</a
+          >
+        </li>
+        <li>
+          <a
+            class="footer__information-copyright--link link"
+            href=""
+            target="_blank"
+            rel="noopener nonereferre"
+            aria-label="terms of service"
+            >Terms of Service</a
+          >
+        </li>
+        <li>
+          <a
+            class="footer__information-copyright--link link"
+            href=""
+            target="_blank"
+            rel="noopener nonereferre"
+            aria-label="cookies settings"
+            >Cookies Settings
+          </a>
+        </li>
+      </ul>
+      <p class="footer__information-copyright--text">
+        2022 FoodSta. All right reserved.
+      </p>
     </div>
   </div>
 </footer>
