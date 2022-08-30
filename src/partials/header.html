@@ -1,41 +1,42 @@
 <header class="header">
   <div class="header__container">
-    <a class="header__logo" href="">
+    <a class="header__logo" href="./index.html">
       <svg class="" width="66" height="52">
         <use href="./images/spryte/spryte.svg#logo"></use>
       </svg>
     </a>
+
     <div class="header__menu">
       <nav>
         <ul class="header__list">
           <li class="header__item">
-            <a class="header__link" href="">Home</a>
+            <a class="header__link" href="#hero">Home</a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="">About</a>
+            <a class="header__link" href="#Offerings">About</a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="">Service</a>
+            <a class="header__link" href="#Favorites">Service</a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="">Menu</a>
+            <a class="header__link" href="#Customers">Menu</a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="">Contact</a>
+            <a class="header__link" href="#Subscribe">Contact</a>
           </li>
         </ul>
       </nav>
       <button class="button" type="button">Order Now</button>
     </div>
+
     <button
-      class="btn__burger"
+      class="mobile-btn__burger"
       type="button"
       aria-expanded="false"
       aria-controls="mobile-menu"
-      data-menu-button
     >
       <svg
-        class=""
+        class="mobile-btn__icon"
         width="28"
         height="28"
         aria-label="Перемикач мобільного меню"
@@ -44,5 +45,32 @@
         <use href="./images/spryte/spryte.svg#burger"></use>
       </svg>
     </button>
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button type="button" class="mobile-menu__btn js-close-menu">
+        <svg class="mobile-menu__icon" width="24" height="24">
+          <use href="./images/spryte/spryte.svg#cross"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#hero">Home</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#Offerings">About</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#Favorites">Service</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#Customers">Menu</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#Subscribe">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
