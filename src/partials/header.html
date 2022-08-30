@@ -29,25 +29,15 @@
       <button class="button" type="button">Order Now</button>
     </div>
 
-    <button
-      class="mobile-btn__burger"
-      type="button"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-    >
-      <svg
-        class="mobile-btn__icon"
-        width="28"
-        height="28"
-        aria-label="Перемикач мобільного меню"
-        aria-controls="mobile-menu"
-      >
+    <button class="mobile-btn__burger" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-open>
+      <svg class="mobile-btn__icon" width="28" height="28" aria-label="Перемикач мобільного меню"
+        aria-controls="mobile-menu">
         <use href="./images/spryte/spryte.svg#burger"></use>
       </svg>
     </button>
 
-    <div class="mobile-menu js-menu-container" id="mobile-menu">
-      <button type="button" class="mobile-menu__btn js-close-menu">
+    <div class="mobile-menu js-menu-container" id="mobile-menu" data-menu>
+      <button type="button" class="mobile-menu__btn js-close-menu" data-menu-close>
         <svg class="mobile-menu__icon" width="24" height="24">
           <use href="./images/spryte/spryte.svg#cross"></use>
         </svg>
