@@ -1,4 +1,6 @@
 .slider {
+    grid-area: slider;
+
     @include mq(only_mob){
         position: absolute;
         width: 1px;

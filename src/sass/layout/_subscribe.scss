@@ -1,41 +1,92 @@
 .subscribe {
-  padding: 0 20px;
+  margin-top: -45px;
 
-  .image-deskt {
-    display: none;
-  }
-  .image-tablete {
-    display: none;
-  }
-  .subscribe__image {
-    position: relative;
-    top: -60px;
-    left: 90px;
-    z-index: index 100;
-  }
-
+  @extend %section-padding;  
+  padding-top: 0;
+  
   @include mq(tab) {
-    .image-deskt {
-      display: none;
-    }
-
-    .subscribe__image {
-      display: none;
-    }
+    margin-top: -85px;
   }
 
   @include mq(desk) {
-    .image-tablete {
-      display: none;
-    }
-    .subscribe__image {
-      display: none;
+    padding-bottom: 64px;
+  }
+
+  &__container {
+    @extend %container;
+
+    @include mq(desk) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 38px;
+
     }
   }
-}
 
-.uppertitle {
-  font-weight: 700;
-font-size: 28px;
-line-height: 120%;
+  &__image {
+    display: flex;
+    justify-content: center;
+    width: 57%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(tab){
+      margin-right: 0;
+      width: 281px;
+    }
+
+    @include mq(desk){      
+      min-width: 546px;
+      
+    }
+  }
+
+  &__title {
+    @extend %section-title;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {    
+    line-height: 120%;
+    margin-bottom: 40px;
+    @include mq(tab) {
+      margin-bottom: 24px;
+      font-size: 16px;
+      line-height: 1.5;
+    }    
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    @include mq(tab) {
+      flex-direction: row;
+      gap: 18px;
+      justify-content: left;
+    }
+
+    @include mq(desk) {      
+      gap: 32px;      
+    }
+  }
+
+  &__label{
+    @include mq(tab) {
+      width: 394px;
+    }
+  }    
+
+  &__button {
+    margin-right: 0;
+    width: 106px;
+    height: 42px;
+    @include mq(tab) {
+      width: 106px;
+      margin-left: 0;
+    }
+  }
+
 }
