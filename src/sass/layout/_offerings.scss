@@ -106,14 +106,18 @@
   margin-bottom: 80px;
   width: 280px;
   height: 280px;
-  background-size: contain;
+  background-size: contain, auto, auto;
   background-repeat: no-repeat;
-  background-position: center -30px;
-  background-image: url(../images/offerings/apple-mob@1x.png);
+  background-position: center -30px, center bottom, center center;
+  background-image: url(../images/offerings/apple-mob@1x.png),
+    url(../images/offerings/shadow-mob@1x.png),
+    url(../images/offerings/white-circle-mob@1x.png);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/offerings/apple-mob@2x.png);
+    background-image: url(../images/offerings/apple-mob@2x.png),
+      url(../images/offerings/shadow-mob@2x.png),
+      url(../images/offerings/white-circle-mob@2x.png);
   }
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
@@ -121,21 +125,30 @@
     width: 357px;
     height: 357px;
     margin-bottom: 60px;
-    background-image: url(../images/offerings/apple-1-tab@1x.png);
+    background-image: url(../images/offerings/apple-1-tab@1x.png),
+      url(../images/offerings/shadow-tab@1x.png),
+      url(../images/offerings/white-circle-tab@1x.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/offerings/apple-1-tab@2x.png);
+      background-image: url(../images/offerings/apple-1-tab@2x.png),
+        url(../images/offerings/shadow-tab@2x.png),
+        url(../images/offerings/white-circle-tab@2x.png);
     }
   }
   @media screen and (min-width: 1280px) {
     width: 550px;
     height: 550px;
-    background-image: url(../images/offerings/apple-desk@1x.png);
+    background-position: center -54px, center bottom, center center;
+    background-image: url(../images/offerings/apple-desk@1x.png),
+      url(../images/offerings/shadow-desk@1x.png),
+      url(../images/offerings/white-circle-desk@1x.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/offerings/apple-desk@2x.png);
+      background-image: url(../images/offerings/apple-desk@2x.png),
+        url(../images/offerings/shadow-desk@2x.png),
+        url(../images/offerings/white-circle-desk@2x.png);
     }
   }
 }
