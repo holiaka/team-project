@@ -13,105 +13,108 @@
     padding-bottom: 213px;
   }
 
-  &__overlay {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    background-image: url(../images/customers-say/bg-320.png);
+  background-size: cover;
+  background-position: bottom;
+  background-image: url(../images/customers-say/bg-mob@1x.png);
 
-    @include mq(tab) {
-      background-image: url(../images/customers-say/bg-768.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/customers-say/bg-mob@2x.png);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/customers-say/bg-tab@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customers-say/bg-tab@2x.png);
     }
-    @include mq(desk) {
-      background-image: url(../images/customers-say/bg-1280.png);
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/customers-say/bg-desk@1x.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/customers-say/bg-desk@2x.png);
+      }
     }
   }
-}
-.customers-container {
-  &__title {
-    margin-bottom: 20px;
-
-    @extend %section-title;
-
-    @include mq(tab) {
-      font-size: 42px;
-      margin-bottom: 48px;
-    }
-    @include mq(desk) {
-      font-size: 42px;
+  .customers-container {
+    &__title {
       margin-bottom: 20px;
+
+      @include mq(tab) {
+        font-size: 42px;
+      }
+      @include mq(desk) {
+        font-size: 42px;
+      }
     }
-    &__card--img {
+
+    &__desc {
+      margin-bottom: 32px;
+    }
+
+    &__txt {
+      font-weight: 700;
+      font-size: 16px;
+      margin-top: 28px;
+      margin-bottom: 40px;
+    }
+
+    &__img {
+      width: 48px;
+      height: 48px;
+      margin-right: 16px;
       border-radius: 50%;
     }
-  }
 
-  &__desc {
-    margin-bottom: 32px;
-    @include mq(tab) {
-      font-size: 16px;
+    &__name {
+      padding: 6px 16px 6px 0;
+      border-right: 1px solid var(--dark-green);
     }
-    @include mq(desk) {
-      font-size: 16px;
+
+    &__card {
+      display: flex;
     }
-  }
 
-  &__txt {
-    font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 40px;
-  }
-  &__stars {
-    padding-bottom: 28px;
-  }
-}
+    &__list {
+      @include mq(tab) {
+        display: flex;
+      }
+      @include mq(desk) {
+        display: flex;
+      }
+    }
 
-.customers-container__card {
-  display: flex;
-  &:not(:last-child) {
-    margin-right: 139px;
-  }
+    &__item {
+      width: 280px;
+      padding: 8px;
+      margin: 0 auto;
+      text-align: left;
+      background-color: #ffffff;
+      border-radius: 0 30px 30px 30px;
 
-  &--img {
-    width: 48px;
-    height: 48px;
-    margin-right: 16px;
-  }
-  &--name {
-    display: block;
-    font-weight: 600;
-    padding-right: 16px;
-    border-right: 0.85px solid #7eb101;
-  }
-}
-.customers-container__list {
-  @include mq(tab) {
-    display: flex;
-  }
-  @include mq(desk) {
-    display: flex;
-  }
-}
-.customers-container__item {
-  width: 280px;
-  padding: 8px;
-  margin: 0 auto;
-  text-align: left;
-  background-color: #ffffff;
-  border-radius: 0 30px 30px 30px;
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
 
-  @extend %reset-list;
+      @extend %reset-list;
 
-  @include mq(tab) {
-    width: 336px;
-    height: 244px;
-  }
-  @include mq(desk) {
-    width: 500px;
-    height: 227px;
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 24px;
+      @include mq(tab) {
+        width: 336px;
+        height: 244px;
+        padding: 12px;
+        margin-right: 32px;
+        margin-bottom: 0;
+      }
+      @include mq(desk) {
+        width: 500px;
+        height: 227px;
+        padding: 14px;
+        margin-left: 0;
+        margin-right: 139px;
+        margin-bottom: 0;
+      }
+    }
   }
 }
