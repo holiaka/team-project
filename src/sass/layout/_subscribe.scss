@@ -1,10 +1,15 @@
 .subscribe {
   margin-top: -45px;
+
+  @extend %section-padding;  
   padding-top: 0;
-  padding-bottom: 0;
   
   @include mq(tab) {
     margin-top: -85px;
+  }
+
+  @include mq(desk) {
+    padding-bottom: 64px;
   }
 
   &__container {
@@ -13,6 +18,10 @@
     @include mq(desk) {
       display: flex;
       flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 38px;
+
     }
   }
 
@@ -29,16 +38,57 @@
     }
 
     @include mq(desk){      
-      width: 546px;
+      min-width: 546px;
+      
     }
   }
 
+  &__title {
+    @extend %section-title;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {    
+    line-height: 120%;
+    margin-bottom: 40px;
+    @include mq(tab) {
+      margin-bottom: 24px;
+      font-size: 16px;
+      line-height: 1.5;
+    }    
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    @include mq(tab) {
+      flex-direction: row;
+      gap: 18px;
+      justify-content: left;
+    }
+
+    @include mq(tab) {      
+      gap: 32px;      
+    }
 
 
-}
+  }
 
-.uppetitle {
-  font-weight: 700;
-font-size: 28px;
-line-height: 120%;
+  &__label{
+    @include mq(tab) {
+      width: 394px;
+    }
+  }    
+
+  &__button {
+    margin-right: 0;
+    width: 106px;
+    height: 42px;
+    @include mq(tab) {
+      width: 106px;
+      margin-left: 0;
+    }
+  }
+
 }
