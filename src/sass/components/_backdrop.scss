@@ -14,12 +14,14 @@
         visibility var(--animation-time);
 
     @include mq(only_mob) {
+        
         overflow-y: scroll;
-        // padding: 93px 15px;
+   
     }
 
 
     &--is-hidden {
+        
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
