@@ -1,32 +1,32 @@
 .offerings__container {
   @extend %container;
   background-size: cover;
-  background-image: url(../images/offerings/bg-mob@1x.png);
+  background-image: url(../images/offerings/bg-mob@1x.webp);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/offerings/bg-mob@2x.png);
+    background-image: url(../images/offerings/bg-mob@2x.webp);
   }
   margin-top: 50px;
   padding-top: 41px;
   padding-bottom: 60px;
   @media screen and (min-width: 768px) {
-    background-image: url(../images/offerings/bg-tab@1x.png);
+    background-image: url(../images/offerings/bg-tab@1x.webp);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/offerings/bg-tab@2x.png);
+      background-image: url(../images/offerings/bg-tab@2x.webp);
     }
     padding-top: 150px;
     padding-bottom: 100px;
     margin-top: -108px;
   }
   @media screen and (min-width: 1280px) {
-    background-image: url(../images/offerings/bg-desk@1x.png);
+    background-image: url(../images/offerings/bg-desk@1x.webp);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/offerings/bg-desk@2x.png);
+      background-image: url(../images/offerings/bg-desk@2x.webp);
     }
     padding-top: 177px;
     padding-bottom: 75px;
@@ -54,8 +54,8 @@
   height: 48px;
   padding: 8px;
   border-radius: 50%;
-  background-color: #fff;
-  fill: #7eb101;
+  background-color: var(--button-wh-bgc);
+  fill: var(--dark-green);
   margin-bottom: 8px;
 }
 .offerings__link {
@@ -63,7 +63,7 @@
   font-weight: 400;
   font-size: 13.6667px;
   line-height: 150%;
-  color: #000000;
+  color: var(--full-black-color);
 }
 .offerings__title {
   @extend %section-title;
@@ -82,8 +82,8 @@
   cursor: pointer;
   font-family: inherit;
   padding: 10px 22px;
-  background: #fff;
-  border: 2px solid #7eb101;
+  background: var(--button-wh-bgc);
+  border: 2px solid var(--dark-green);
   border-radius: 30px;
   margin-right: 24px;
   &:focus,
@@ -109,15 +109,15 @@
   background-size: contain, auto, auto;
   background-repeat: no-repeat;
   background-position: center -30px, center bottom, center center;
-  background-image: url(../images/offerings/apple-mob@1x.png),
-    url(../images/offerings/shadow-mob@1x.png),
-    url(../images/offerings/white-circle-mob@1x.png);
+  background-image: url(../images/offerings/apple-mob@1x.webp),
+    url(../images/offerings/shadow-mob@1x.webp),
+    url(../images/offerings/white-circle-mob@1x.webp);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/offerings/apple-mob@2x.png),
-      url(../images/offerings/shadow-mob@2x.png),
-      url(../images/offerings/white-circle-mob@2x.png);
+    background-image: url(../images/offerings/apple-mob@2x.webp),
+      url(../images/offerings/shadow-mob@2x.webp),
+      url(../images/offerings/white-circle-mob@2x.webp);
   }
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
@@ -125,30 +125,30 @@
     width: 357px;
     height: 357px;
     margin-bottom: 60px;
-    background-image: url(../images/offerings/apple-1-tab@1x.png),
-      url(../images/offerings/shadow-tab@1x.png),
-      url(../images/offerings/white-circle-tab@1x.png);
+    background-image: url(../images/offerings/apple-1-tab@1x.webp),
+      url(../images/offerings/shadow-tab@1x.webp),
+      url(../images/offerings/white-circle-tab@1x.webp);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/offerings/apple-1-tab@2x.png),
-        url(../images/offerings/shadow-tab@2x.png),
-        url(../images/offerings/white-circle-tab@2x.png);
+      background-image: url(../images/offerings/apple-1-tab@2x.webp),
+        url(../images/offerings/shadow-tab@2x.webp),
+        url(../images/offerings/white-circle-tab@2x.webp);
     }
   }
   @media screen and (min-width: 1280px) {
     width: 550px;
     height: 550px;
     background-position: center -54px, center bottom, center center;
-    background-image: url(../images/offerings/apple-desk@1x.png),
-      url(../images/offerings/shadow-desk@1x.png),
-      url(../images/offerings/white-circle-desk@1x.png);
+    background-image: url(../images/offerings/apple-desk@1x.webp),
+      url(../images/offerings/shadow-desk@1x.webp),
+      url(../images/offerings/white-circle-desk@1x.webp);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/offerings/apple-desk@2x.png),
-        url(../images/offerings/shadow-desk@2x.png),
-        url(../images/offerings/white-circle-desk@2x.png);
+      background-image: url(../images/offerings/apple-desk@2x.webp),
+        url(../images/offerings/shadow-desk@2x.webp),
+        url(../images/offerings/white-circle-desk@2x.webp);
     }
   }
 }
@@ -156,11 +156,11 @@
   display: none;
   width: 166px;
   height: 211px;
-  background-image: url(../images/offerings/apple-2-tab@1x.png);
+  background-image: url(../images/offerings/apple-2-tab@1x.webp);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/offerings/apple-2-tab@2x.png);
+    background-image: url(../images/offerings/apple-2-tab@2x.webp);
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     display: block;
@@ -171,11 +171,11 @@
   display: none;
   width: 108px;
   height: 136px;
-  background-image: url(../images/offerings/apple-3-tab@1x.png);
+  background-image: url(../images/offerings/apple-3-tab@1x.webp);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/offerings/apple-3-tab@2x.png);
+    background-image: url(../images/offerings/apple-3-tab@2x.webp);
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     display: block;
