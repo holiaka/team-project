@@ -132,20 +132,22 @@
       gap: 13px;
       justify-content: left;
     }
-
-    @include mq(desk) {
-      flex-direction: row;
-      gap: 13px;
-      justify-content: left;
-    }
   }
 
-  &-includ--email {
+  &-includ--label{
+    position: relative;
+       
+  }
+
+  &-includ--email {    
     width: 100%;
     border: 0.854167px solid #ffe550;    
     height: 42px;
     padding: 12px;
     border-radius: 30px;
+
+    transition: opacity var(--animation-time);
+    
 
     @include mq(tab) {
     width: 279px;
@@ -158,13 +160,19 @@
     }
 
     &~.validation-text {
+      display: block;
+      position: absolute;
       font-size: 10px;
       line-height: 1.5;     
       color: #FF705D;
+
+      left: 0;
+      bottom: -20;   
       
     }
 
     &:invalid:required:not(:placeholder-shown)~.validation-text {
+      opacity: 0;
     }
   }
 
