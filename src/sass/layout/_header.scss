@@ -22,6 +22,7 @@
         @extend %reset-link;
     }
 
+
     &__menu {
 
         display: flex;
@@ -31,6 +32,7 @@
         @include mq(only_mob) {
 
             display: none;
+
         }
     }
 
@@ -48,17 +50,14 @@
         line-height: 1.14;
         padding: 28px 0;
         display: block;
-
         transition: color var(--animation-time);
 
         @include mq(desk) {
-
             color: var(--typical-text-color);
         }
 
         &:hover,
         &:focus {
-
             color: var(--hover-green);
             text-decoration: underline;
         }

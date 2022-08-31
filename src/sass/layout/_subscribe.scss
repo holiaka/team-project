@@ -68,11 +68,9 @@
       justify-content: left;
     }
 
-    @include mq(tab) {      
+    @include mq(desk) {      
       gap: 32px;      
     }
-
-
   }
 
   &__label{
