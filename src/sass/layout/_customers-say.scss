@@ -15,26 +15,26 @@
 
   background-size: cover;
   background-position: bottom;
-  background-image: url(../images/customers-say/bg-mob@1x.png);
+  background-image: url(../images/customers-say/bg-mob@1x.webp);
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/customers-say/bg-mob@2x.png);
+    background-image: url(../images/customers-say/bg-mob@2x.webp);
   }
   @media screen and (min-width: 768px) {
-    background-image: url(../images/customers-say/bg-tab@1x.png);
+    background-image: url(../images/customers-say/bg-tab@1x.webp);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/customers-say/bg-tab@2x.png);
+      background-image: url(../images/customers-say/bg-tab@2x.webp);
     }
     @media screen and (min-width: 1280px) {
-      background-image: url(../images/customers-say/bg-desk@1x.png);
+      background-image: url(../images/customers-say/bg-desk@1x.webp);
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url(../images/customers-say/bg-desk@2x.png);
+        background-image: url(../images/customers-say/bg-desk@2x.webp);
       }
     }
   }
