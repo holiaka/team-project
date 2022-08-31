@@ -1,15 +1,14 @@
-<footer class="footer section">
-  <!-------------------- BLOCK 1 ------------------------------>
+<footer class="footer footer-bgr-overlay" id="footer">
   <div class="footer__container">
+    <!-------------------- BLOCK 1 ------------------------------>
+    <!----------- logo - navigation - form ------------------->
+
+    <div class="footer__nav-form">
+      <!--------- logo - navigation----------------->
+
       <div class="footer__nav">
         <!-------------- logo ----------------->
-        <a
-          class="footer__nav-logo link"
-          href=""
-          target="_blank"
-          rel="noopener nonereferre"
-          aria-label="logo"
-        >
+        <a class="footer__nav-logo link" href="" target="_blank" rel="noopener nonereferre" aria-label="logo">
           <svg class="footer__nav-svg" width="66" height="52">
             <use href="./images/spryte/spryte.svg#logo"></use>
           </svg>
@@ -20,100 +19,74 @@
         <nav class="footer__nav-nav nav">
           <ul class="footer__nav-list list">
             <li class="footer__nav-item">
-              <a
-                class="footer__nav-link link"
-                href="#hero"
-                target="_blank"
-                rel="noopener nonereferre"
-                aria-label="Home"
-              ></a
-              >Home
+              <a class="footer__nav-link link" href="#hero" target="_blank" rel="noopener nonereferre"
+                aria-label="Home"></a>Home
             </li>
             <li class="footer__nav-item">
-              <a
-                class="footer__nav-link link"
-                href="#Offerings"
-                target="_blank"
-                rel="noopener nonereferre"
-                aria-label="about"
-              ></a
-              >About
+              <a class="footer__nav-link link" href="#Offerings" target="_blank" rel="noopener nonereferre"
+                aria-label="about"></a>About
             </li>
             <li class="footer__nav-item">
-              <a
-                class="footer__nav-link link"
-                href="#Favorites"
-                target="_blank"
-                rel="noopener nonereferre"
-                aria-label="service"
-              ></a
-              >Service
+              <a class="footer__nav-link link" href="#Favorites" target="_blank" rel="noopener nonereferre"
+                aria-label="service"></a>Service
             </li>
             <li class="footer__nav-item">
-              <a
-                class="footer__nav-link link"
-                href="#Customers"
-                target="_blank"
-                rel="noopener nonereferre"
-                aria-label="menu"
-              ></a
-              >Menu
+              <a class="footer__nav-link link" href="#Customers" target="_blank" rel="noopener nonereferre"
+                aria-label="menu"></a>Menu
             </li>
             <li class="footer__nav-item">
-              <a
-                class="footer__nav-link link"
-                href="#Subscribe"
-                target="_blank"
-                rel="noopener nonereferre"
-                aria-label="contact"
-              ></a
-              >Contact
+              <a class="footer__nav-link link" href="#Subscribe" target="_blank" rel="noopener nonereferre"
+                aria-label="contact"></a>Contact
             </li>
           </ul>
         </nav>
       </div>
+
+      <!------------ forma -------------------->
+
+      <div class="footer__form">
+        <h3 class="footer__form-uppertitle">Subscribe</h3>
+        <form class="footer__form-includ" autocomplete="off" novalidate>
+          <label class="footer__form-includ--label" for="user_email">
+            <input class="footer__form-includ--email" type="email" name="email" placeholder="Enter your email"
+              required />
+            <span class="validation-text">&#9888; Not a valid email address (example@email.com)</span>
+          </label>
+          <button class="footer__form-includ--button button" type="submit">
+            Subscribe
+          </button>
+        </form>
+        <span class="footer__form-includ--span">By subscribing you agree to with our
+          <a class="footer__form-includ--link link" href="" target="_blank" rel="noopener nonereferre"
+            aria-label="privacy policy">Privacy Policy
+          </a>
+        </span>
+      </div>
+    </div>
+
     <!------------------ BLOCK 2 ------------------------>
 
-    <!------------ forma -------------------->
-    <div>
-      <div class="footer__form form">
-        <h3 class="form__uppertitle uppertitle--form uppertitle">Subscribe</h3>
-        <form class="form" autocomplete="off" novalidate>
-          <label class="form__label" for="user_email">
-            <input class="form__input input--email input" type="email" name="email" placeholder="Enter your email"
-              required />
-          </label>
-          <button class="form__button button" type="submit">Subscribe</button>
-          <span class="form__text text-span">By subscribing you agree to with our
-            <a class="form__link link-form link" href="" target="_blank" rel="noopener nonereferre"
-              aria-label="privacy policy">Privacy Policy
-            </a>
-          </span>
-        </form>
-      </div>
+    <!----  information-copyright  ----->
 
-      <!----  information-copyright  ----->
-
-      <div class="footer__information-copyright information-copyright">
-        <ul class="information-copyright__list">
-          <li>
-            <a class="information-copyright__link link--information link" href="" target="_blank"
-              rel="noopener nonereferre" aria-label="privacy policy">Privacy Policy</a>
-          </li>
-          <li>
-            <a class="information-copyright__link link--information link" href="" target="_blank"
-              rel="noopener nonereferre" aria-label="terms of service">Terms of Service</a>
-          </li>
-          <li>
-            <a class="information-copyright__link link--information link reset-link" href="" target="_blank"
-              rel="noopener nonereferre" aria-label="cookies settings">Cookies Settings
-            </a>
-          </li>
-        </ul>
-        <p class="information-copyright__text text-copyright">
-          2022 FoodSta. All right reserved.
-        </p>
-      </div>
+    <div class="footer__information-copyright">
+      <ul class="footer__information-copyright--list list">
+        <li>
+          <a class="footer__information-copyright--link link" href="" target="_blank" rel="noopener nonereferre"
+            aria-label="privacy policy">Privacy Policy</a>
+        </li>
+        <li>
+          <a class="footer__information-copyright--link link" href="" target="_blank" rel="noopener nonereferre"
+            aria-label="terms of service">Terms of Service</a>
+        </li>
+        <li>
+          <a class="footer__information-copyright--link link" href="" target="_blank" rel="noopener nonereferre"
+            aria-label="cookies settings">Cookies Settings
+          </a>
+        </li>
+      </ul>
+      <p class="footer__information-copyright--text">
+        2022 FoodSta. All right reserved.
+      </p>
     </div>
   </div>
 </footer>
