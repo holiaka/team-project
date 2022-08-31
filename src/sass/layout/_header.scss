@@ -13,6 +13,8 @@
         &__container {
             @extend %container;
 
+            position: relative;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -23,13 +25,11 @@
         }
 
         &__menu  {
-
             display: flex;
             gap: 28px;
             align-items: center;
 
             @include mq(only_mob) {
-
                 display: none;
             }
         }
@@ -52,7 +52,6 @@
             transition: color var(--animation-time);
 
             @include mq(desk) {
-
                 color: var(--typical-text-color);
             }
 
@@ -61,11 +60,7 @@
             
                 color: var(--hover-green);
                  text-decoration: underline;
-            }
-
-      
-
-            
+            }            
         }
 }
 
