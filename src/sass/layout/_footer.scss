@@ -11,7 +11,6 @@
   align-items: center;
 
   @extend %section-padding;
-  
 
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 }
@@ -116,7 +115,9 @@
 }
 
 /* ------------ forma ------------- */
-
+.validation-text {
+  opacity: 0;
+}
 .footer__form {
   &-uppertitle {
     margin-bottom: 12px;
@@ -125,7 +126,7 @@
   &-includ {
     display: flex;
     flex-direction: column;
-    gap: 20px;    
+    gap: 20px;
 
     @include mq(tab) {
       flex-direction: row;
@@ -134,45 +135,48 @@
     }
   }
 
-  &-includ--label{
+  &-includ--label {
     position: relative;
-       
   }
 
-  &-includ--email {    
+  &-includ--email {
     width: 100%;
-    border: 0.854167px solid #ffe550;    
+    border: 0.854167px solid var(--orange-def);
     height: 42px;
     padding: 12px;
     border-radius: 30px;
+    outline: none;
 
     transition: opacity var(--animation-time);
-    
 
     @include mq(tab) {
-    width: 279px;
+      width: 279px;
     }
 
-    &:hover,
-    &:focus-visible {
-      border: 0.854167px solid #7eb101;
-      outline: none;
+    // &:hover,
+    // &:focus-visible {
+    //   border: 0.854167px solid #7eb101;
+    //
+    // }
+    &:invalid:required:not(:placeholder-shown) ~ .validation-text {
+      opacity: 1;
+    }
+    &:invalid:required:not(:placeholder-shown) {
+      border-color: var(--error-red);
+    }
+    &:valid {
+      border-color: var(--dark-green);
     }
 
-    &~.validation-text {
+    & ~ .validation-text {
       display: block;
-      position: absolute;
+      // position: absolute;
       font-size: 10px;
-      line-height: 1.5;     
-      color: #FF705D;
+      line-height: 1.5;
+      color: var(--error-red);
 
       left: 0;
-      bottom: -20;   
-      
-    }
-
-    &:invalid:required:not(:placeholder-shown)~.validation-text {
-      opacity: 0;
+      bottom: -20;
     }
   }
 
