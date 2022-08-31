@@ -1,0 +1,134 @@
+.modal {
+
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    max-height: 449px;
+    padding: 32px 20px;
+
+    transform: translate(-50%) scale(1);
+    transition: transform var(--animation-time), opacity var(--animation-time);
+    background-color: var(--orange-def);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 30px;
+    opacity: 1;
+    z-index: 80;
+
+    @include mq(mob) {
+
+        max-width: 458px;
+        width: 100%;
+    }
+
+    @include mq(tab) {
+
+        max-width: 458px;
+        max-height: 449px;
+        top: 98px;
+        left: 50%;
+        transform: translateX(-50%) scale(1);
+    }
+
+    @include mq(desk) {
+
+        top: 129px;
+    }
+
+    &__btn {
+
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        display: flex;
+        width: 32px;
+        height: 32px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: var(--button-wh-bgc);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+        cursor: pointer;
+        outline-color: transparent;
+        border: none;
+    }
+}
+
+.modal-form {
+
+    &__title {
+
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    &__group {
+
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        margin-bottom: 17px;
+    }
+
+    &__field {
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+
+        margin-bottom: 2px;
+        margin-left: 12px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    &__input {
+
+        padding: 14px 12px;
+        height: 48px;
+        background: var(--button-wh-bgc);
+        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 30px;
+        outline: transparent;
+        border: 1px solid rgba(18, 18, 18, 0.12);
+
+        &::placeholder {
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: calc(20 / 16);
+            color: #C4C4C4;
+        }
+    }
+
+    &__btn {
+
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        min-width: 106px;
+        color: var(--typical-text-color);
+        background: var(--button-wh-bgc);
+        border: 2px solid var(--dark-green);
+        border-radius: 30px;
+        padding: 10px 38px;
+        cursor: pointer;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
+.backdrop--is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.3);
+}
