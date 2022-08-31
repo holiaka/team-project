@@ -1,6 +1,7 @@
 .list {
   @extend %reset-list;
 }
+
 .link {
   @extend %reset-link;
 }
@@ -32,6 +33,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
   }
+
   @include mq(desk) {
     background-image: url('/src/images/footer/footer.bgr.fruit.deskt.png');
   }
@@ -55,6 +57,7 @@
     margin-bottom: 80px;
   }
 }
+
 /* --------- navigation ----------- */
 
 .footer__nav {
@@ -62,8 +65,10 @@
   align-items: center;
 
   margin-bottom: 40px;
+
   @include mq(tab) {
   }
+
   @include mq(desk) {
     margin-right: 320px;
   }
@@ -74,6 +79,7 @@
     @include mq(tab) {
       margin-right: 114px;
     }
+
     @include mq(desk) {
       margin-right: 148px;
     }
@@ -94,6 +100,7 @@
     @include mq(tab) {
       margin-bottom: 0px;
     }
+
     @include mq(desk) {
       display: flex;
     }
@@ -128,12 +135,14 @@
       gap: 13px;
       justify-content: left;
     }
+
     @include mq(desk) {
       flex-direction: row;
       gap: 13px;
       justify-content: left;
     }
   }
+
   &-includ--email {
     border: 0.854167px solid #ffe550;
     width: 279px;

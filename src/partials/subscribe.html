@@ -1,58 +1,52 @@
-<section class="subscribe section-padding">
-  <div class="subscribe__container container">
-    <div class="subscribe__image image-mobile">
-      <img
-        src="./images/subscribe/subscribe.banan.mobile.png"
-        alt="banan"
-        width="280"
-        height="78"
-      />
-    </div>
+<section class="subscribe">
+  <div class="subscribe__container">
+    <picture class="subscribe__image">
+      <!-- Desktop screen -->
+      <source media="(min-width: 1280px)" srcset="
+        ./images/subscribe/bananas@1x-lg.webp 1x,
+        ./images/subscribe/bananas@1x-lg.webp 2x" type="image/webp" />
+      <source media="(min-width: 1280px)" srcset="
+        ./images/subscribe/bananas@1x-lg.png 1x,
+        ./images/subscribe/bananas@1x-lg.png 2x" type=" image/png" />
 
-    <div class="subscribe__image image-tablete">
-      <img
-        src="./images/subscribe/subscribe.banan.tablete.png"
-        alt="banan"
-        width="281"
-        height="136"
-      />
-    </div>
-    <div class="subscribe__image image-deskt">
-      <img
-        src="./images/subscribe/subscribe.banan.deskt.png"
-        alt="banan"
-        width="608"
-        height="266"
-      />
-    </div>
+      <!-- Tab. screen -->
+      <source media="(min-width: 768px)" srcset="
+        ./images/subscribe/bananas@1x-md.webp 1x,
+        ./images/subscribe/bananas@1x-md.webp 2x" type="image/webp" />
+      <source media="(min-width: 768px)" srcset="
+        ./images/subscribe/bananas@1x-md.png 1x,
+        ./images/subscribe/bananas@1x-md.png 2x" type=" image/png" />
+
+      <!-- Mob. screen -->
+      <source media="(min-width: 768px)" srcset="
+        ./images/subscribe/bananas@1x-sm.webp 1x,
+        ./images/subscribe/bananas@1x-sm.webp 2x" type="image/webp" />
+      <source media="(min-width: 768px)" srcset="
+        ./images/subscribe/bananas@1x-sm.png 1x,
+        ./images/subscribe/bananas@1x-sm.png 2x" type=" image/png" />
+
+      <img src="./images/subscribe/bananas@1x-sm.png" alt="Banan`s photo" width="546" height="266" />
+    </picture>
 
     <div class="subscribe__block">
-      <h2 class="subscribe__uppertitle uppertitle">
-        Subscribe To Get <br />
-        Special Offers
+      <h2 class="subscribe__title">
+        Subscribe To Get
+        Special&nbsp;Offers
       </h2>
-      <p class="subscribe__subtitle subtitle">
+
+      <p class="subscribe__subtitle">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         varius enim in eros elementum tristique.
       </p>
-    </div>
 
-    <div class="subscribe__form form">
-      <h3 class="form__uppertitle uppertitle--form uppertitle visually-hidden">
-        Subscribe
-      </h3>
-      <form class="form" autocomplete="off" novalidate>
-        <label class="form__label" for="user_email">
-          <input
-            class="form__input input--email input"
-            type="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-          />
+      <form class="subscribe__form" autocomplete="off" novalidate>
+        <label class="form__label subscribe__label" for="user_email">
+          <input class="form__input subscribe__input" type="email" name="email" placeholder="Enter your email"
+            required />
         </label>
-        <button class="form__button button" type="submit">Subscribe</button>
+        <button class="button subscribe__button" type="submit">Subscribe</button>
       </form>
+
     </div>
   </div>
 </section>

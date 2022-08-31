@@ -1,11 +1,6 @@
-<footer class="footer footer-bgr-overlay" id="footer">
+<footer class="footer section">
+  <!-------------------- BLOCK 1 ------------------------------>
   <div class="footer__container">
-    <!-------------------- BLOCK 1 ------------------------------>
-    <!----------- logo - navigation - form ------------------->
-
-    <div class="footer__nav-form">
-      <!--------- logo - navigation----------------->
-
       <div class="footer__nav">
         <!-------------- logo ----------------->
         <a
@@ -77,79 +72,48 @@
           </ul>
         </nav>
       </div>
-
-      <!------------ forma -------------------->
-
-      <div class="footer__form">
-        <h3 class="footer__form-uppertitle">Subscribe</h3>
-        <form class="footer__form-includ" autocomplete="off" novalidate>
-          <label class="footer__form-includ--label" for="user_email">
-            <input
-              class="footer__form-includ--email"
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              required
-            />
-          </label>
-          <button class="footer__form-includ--button button" type="submit">
-            Subscribe
-          </button>
-        </form>
-        <span class="footer__form-includ--span"
-          >By subscribing you agree to with our
-          <a
-            class="footer__form-includ--link link"
-            href=""
-            target="_blank"
-            rel="noopener nonereferre"
-            aria-label="privacy policy"
-            >Privacy Policy
-          </a>
-        </span>
-      </div>
-    </div>
-
     <!------------------ BLOCK 2 ------------------------>
 
-    <!----  information-copyright  ----->
+    <!------------ forma -------------------->
+    <div>
+      <div class="footer__form form">
+        <h3 class="form__uppertitle uppertitle--form uppertitle">Subscribe</h3>
+        <form class="form" autocomplete="off" novalidate>
+          <label class="form__label" for="user_email">
+            <input class="form__input input--email input" type="email" name="email" placeholder="Enter your email"
+              required />
+          </label>
+          <button class="form__button button" type="submit">Subscribe</button>
+          <span class="form__text text-span">By subscribing you agree to with our
+            <a class="form__link link-form link" href="" target="_blank" rel="noopener nonereferre"
+              aria-label="privacy policy">Privacy Policy
+            </a>
+          </span>
+        </form>
+      </div>
 
-    <div class="footer__information-copyright">
-      <ul class="footer__information-copyright--list list">
-        <li>
-          <a
-            class="footer__information-copyright--link link"
-            href=""
-            target="_blank"
-            rel="noopener nonereferre"
-            aria-label="privacy policy"
-            >Privacy Policy</a
-          >
-        </li>
-        <li>
-          <a
-            class="footer__information-copyright--link link"
-            href=""
-            target="_blank"
-            rel="noopener nonereferre"
-            aria-label="terms of service"
-            >Terms of Service</a
-          >
-        </li>
-        <li>
-          <a
-            class="footer__information-copyright--link link"
-            href=""
-            target="_blank"
-            rel="noopener nonereferre"
-            aria-label="cookies settings"
-            >Cookies Settings
-          </a>
-        </li>
-      </ul>
-      <p class="footer__information-copyright--text">
-        2022 FoodSta. All right reserved.
-      </p>
+      <!----  information-copyright  ----->
+
+      <div class="footer__information-copyright information-copyright">
+        <ul class="information-copyright__list">
+          <li>
+            <a class="information-copyright__link link--information link" href="" target="_blank"
+              rel="noopener nonereferre" aria-label="privacy policy">Privacy Policy</a>
+          </li>
+          <li>
+            <a class="information-copyright__link link--information link" href="" target="_blank"
+              rel="noopener nonereferre" aria-label="terms of service">Terms of Service</a>
+          </li>
+          <li>
+            <a class="information-copyright__link link--information link reset-link" href="" target="_blank"
+              rel="noopener nonereferre" aria-label="cookies settings">Cookies Settings
+            </a>
+          </li>
+        </ul>
+        <p class="information-copyright__text text-copyright">
+          2022 FoodSta. All right reserved.
+        </p>
+      </div>
     </div>
   </div>
 </footer>
