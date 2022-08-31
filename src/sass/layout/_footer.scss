@@ -16,9 +16,9 @@
 }
 
 .footer-bgr-overlay {
-  background-image: url('/src/images/footer/footer.bgr.mobile.apple.png'),
-    url('/src/images/footer/footer.bgr.mobile.citrus.png'),
-    url('/src/images/footer/footer.bgr.mobile.fruitmix.png');
+  background-image: url('/src/images/footer/footer.bgr.mobile.apple.webp'),
+    url('/src/images/footer/footer.bgr.mobile.citrus.webp'),
+    url('/src/images/footer/footer.bgr.mobile.fruitmix.webp');
 
   background-position: top 132px left 0px, top 0px right 0px,
     bottom 0px left 50%;
@@ -26,14 +26,14 @@
   background-repeat: no-repeat;
 
   @include mq(tab) {
-    background-image: url('/src/images/footer/footer.bgr.fruit.tablete.png');
+    background-image: url('/src/images/footer/footer.bgr.fruit.tablete.webp');
     background-position: bottom 0px left 50%;
     background-size: 100%;
     background-repeat: no-repeat;
   }
 
   @include mq(desk) {
-    background-image: url('/src/images/footer/footer.bgr.fruit.deskt.png');
+    background-image: url('/src/images/footer/footer.bgr.fruit.deskt.webp');
   }
 }
 
