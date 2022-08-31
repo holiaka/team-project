@@ -2,59 +2,28 @@
   <div class="subscribe__container">
     <picture class="subscribe__image">
       <!-- Desktop screen -->
-      <source
-        media="(min-width: 1280px)"
-        srcset="
-          ./images/subscribe/bananas@1x-lg.webp 1x,
-          ./images/subscribe/bananas@1x-lg.webp 2x
-        "
-        type="image/webp"
-      />
-      <source
-        media="(min-width: 1280px)"
-        srcset="
-          ./images/subscribe/bananas@1x-lg.png 1x,
-          ./images/subscribe/bananas@1x-lg.png 2x
-        "
-        type=" image/png"
-      />
+      <source media="(min-width: 1280px)" srcset="
+        ./images/subscribe/bananas@1x-lg.webp 1x,
+        ./images/subscribe/bananas@1x-lg.webp 2x" type="image/webp" />
+      <source media="(min-width: 1280px)" srcset="
+        ./images/subscribe/bananas@1x-lg.png 1x,
+        ./images/subscribe/bananas@1x-lg.png 2x" type="image/png" />
 
       <!-- Tab. screen -->
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          ./images/subscribe/bananas@1x-md.webp 1x,
-          ./images/subscribe/bananas@1x-md.webp 2x
-        "
-        type="image/webp"
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          ./images/subscribe/bananas@1x-md.png 1x,
-          ./images/subscribe/bananas@1x-md.png 2x
-        "
-        type=" image/png"
-      />
+      <source media="(min-width: 768px)" srcset="
+        ./images/subscribe/bananas@1x-md.webp 1x,
+        ./images/subscribe/bananas@1x-md.webp 2x" type="image/webp" />
+      <source media="(min-width: 768px)" srcset="
+        ./images/subscribe/bananas@1x-md.png 1x,
+        ./images/subscribe/bananas@1x-md.png 2x" type="image/png" />
 
       <!-- Mob. screen -->
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          ./images/subscribe/bananas@1x-sm.webp 1x,
-          ./images/subscribe/bananas@1x-sm.webp 2x
-        "
-        type="image/webp"
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          ./images/subscribe/bananas@1x-sm.png 1x,
-          ./images/subscribe/bananas@1x-sm.png 2x
-        "
-        type=" image/png"
-      />
-
+      <source media="(min-width: 768px)" srcset="
+        ./images/subscribe/bananas@1x-sm.webp 1x,
+        ./images/subscribe/bananas@1x-sm.webp 2x" type="image/webp" />
+      <source media="(min-width: 768px)" srcset="
+        ./images/subscribe/bananas@1x-sm.png 1x,
+        ./images/subscribe/bananas@1x-sm.png 2x" type="image/png" />
       <img
         src="./images/subscribe/bananas@1x-sm.png"
         alt="Banan`s photo"
@@ -70,19 +39,12 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         varius enim in eros elementum tristique.
       </p>
-
+      
       <form class="subscribe__form" autocomplete="off" novalidate>
-        <label class="subscribe__label" for="user_email">
-          <input
-            class="footer__form-includ--email subscribe__input"
-            type="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-          />
-          <span class="validation-text"
-            >&#9888; Not a valid email address (example@email.com)</span
-          >
+
+        <label class="subscribe__label" for="user_email1">
+          <input class="footer__form-includ--email subscribe__input" type="email" name="email" id="user_email1"
+            placeholder="Enter your email" required />
         </label>
         <button class="button subscribe__button" type="submit">
           Subscribe
