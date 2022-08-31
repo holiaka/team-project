@@ -11,8 +11,7 @@
   align-items: center;
 
   @extend %section-padding;
-  @extend %container;
-  outline: 1px solid blue;
+  
 
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 }
@@ -40,6 +39,7 @@
 }
 
 .footer__container {
+  @extend %container;
   display: block;
 }
 
@@ -50,10 +50,6 @@
 
   @include mq(desk) {
     display: flex;
-    margin-bottom: 100px;
-  }
-
-  @include mq(desk) {
     margin-bottom: 80px;
   }
 }
@@ -66,15 +62,16 @@
 
   margin-bottom: 40px;
 
-  @include mq(tab) {
-  }
-
   @include mq(desk) {
     margin-right: 320px;
   }
 
   &-logo {
     margin-right: 81px;
+
+    @include mq(only_mob) {
+      align-self: flex-start;
+    }
 
     @include mq(tab) {
       margin-right: 114px;
@@ -128,7 +125,7 @@
   &-includ {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 20px;    
 
     @include mq(tab) {
       flex-direction: row;
@@ -144,16 +141,30 @@
   }
 
   &-includ--email {
-    border: 0.854167px solid #ffe550;
-    width: 279px;
+    width: 100%;
+    border: 0.854167px solid #ffe550;    
     height: 42px;
     padding: 12px;
     border-radius: 30px;
+
+    @include mq(tab) {
+    width: 279px;
+    }
 
     &:hover,
     &:focus-visible {
       border: 0.854167px solid #7eb101;
       outline: none;
+    }
+
+    &~.validation-text {
+      font-size: 10px;
+      line-height: 1.5;     
+      color: #FF705D;
+      
+    }
+
+    &:invalid:required:not(:placeholder-shown)~.validation-text {
     }
   }
 
@@ -164,6 +175,10 @@
     justify-content: flex-end;
     margin-right: 0px;
     margin-bottom: 20px;
+
+    @include mq(tab) {
+      margin-left: 0;
+    }
   }
 
   &-includ--span {
@@ -182,6 +197,7 @@
     background-color: var(--button-wh-bgc);
     border: 0.85px solid var(--dark-green);
   }
+
   .button:hover,
   .button:focus {
     background-color: var(--orange-def);
@@ -228,17 +244,3 @@
     justify-content: center;
   }
 }
-
-/* 
-background-image: url(../images/contacts/contacts-bg.png);
-  background-repeat: no-repeat;
-  background-position: top 0 left calc(50% + 328px);
-
-.register-form__input:hover,
-.register-form__input:focus-visible {
-  border: 1px solid var(--accent-txt-cl);
-  outline: none;
-
-
-
-*/
