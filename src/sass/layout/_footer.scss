@@ -28,7 +28,7 @@
   @include mq(tab) {
     background-image: url('/src/images/footer/footer.bgr.fruit.tablete.webp');
     background-position: bottom 0px left 50%;
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
   }
 
